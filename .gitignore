@@ -1,3 +1,9 @@
 #exclude the .env EXCEPT ensure we don't exclude the .env.example.
 /.env
 !/.env.example
+
+#exclude the build
+do_fetcher
+
+#exlude mac files if present
+.DS_Store
