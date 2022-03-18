@@ -1,0 +1,3 @@
+#exclude the .env EXCEPT ensure we don't exclude the .env.example.
+/.env
+!/.env.example
