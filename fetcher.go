@@ -81,7 +81,7 @@ func main() {
 	json.Unmarshal([]byte(sb), &json_result)
 
 	//Extract the data from the JSON
-	doe_data := []interface{}(json_result["series"].([]interface{}))[0].(map[string]interface{})["data"]
+	doe_data := []interface{}(json_result["series"].([]interface{}))[0].(map[string]interface{})["data"].([]interface {})
 
 	fmt.Println("Ready")
 
@@ -101,7 +101,14 @@ func main() {
 		}
 	}
 
-	fmt.Println(date_to_search)
-	fmt.Println(doe_data)
+	fmt.Println("Searching for prices in", date_to_search, "...")
+
+	//Look for matching dates
+	for _, data_point := range doe_data {
+		data_point_array := interface{}(data_point).([]interface{})
+		if strings.HasPrefix(data_point_array[0].(string), date_to_search){
+			fmt.Println(data_point_array[0], ":", data_point_array[1])
+		}
+	}
 	
 }
