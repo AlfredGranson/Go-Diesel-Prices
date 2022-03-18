@@ -5,8 +5,9 @@ Go tool to retrieve diesel prices from the US Energy Information Administration 
 
 
 ## Installation
+Ensure you have go installed: https://go.dev/doc/install
 
-First create an API key by signing up at: https://www.eia.gov/opendata/register.php
+Create an API key by signing up at: https://www.eia.gov/opendata/register.php
 
 Clone the repo
 
