@@ -3,7 +3,7 @@
 !/.env.example
 
 #exclude the build
-do_fetcher
+doe_fetcher
 
 #exlude mac files if present
 .DS_Store
