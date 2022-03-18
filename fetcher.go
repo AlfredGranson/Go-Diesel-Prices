@@ -4,6 +4,8 @@ import (
     "fmt"
     "log"
     "os"
+    "net/http"
+    "io/ioutil"
 
     "github.com/joho/godotenv"
 )
@@ -20,5 +22,20 @@ func init() {
 func main() {
 	var url = os.Getenv("EIA_URL") + "?api_key=" + os.Getenv("EIA_KEY") + "&series_id=" + os.Getenv("EIA_SERIES")
 
-	fmt.Printf(url)
+	resp, err := http.Get(url)
+
+	if err != nil {
+      log.Fatalln(err)
+   }
+
+	//We Read the response body on the line below.
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+	  log.Fatalln(err)
+	}
+
+	//Convert the body to type string
+	sb := string(body)
+
+	fmt.Printf(sb)
 }
