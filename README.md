@@ -1,5 +1,5 @@
 
-# doe_fetcher
+# Go-Diesel-Prices
 
 Go tool to retrieve diesel prices from the US Energy Information Administration API
 
