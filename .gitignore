@@ -3,7 +3,7 @@
 !/.env.example
 
 #exclude the build
-doe_fetcher
+Go-Diesel-Prices
 
 #exlude mac files if present
 .DS_Store

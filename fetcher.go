@@ -64,8 +64,8 @@ func main() {
 	resp, err := http.Get(url)
 
 	if err != nil {
-      log.Fatalln(err)
-   }
+		log.Fatalln(err)
+	}
 
 	//We Read the response body on the line below.
 	body, err := ioutil.ReadAll(resp.Body)

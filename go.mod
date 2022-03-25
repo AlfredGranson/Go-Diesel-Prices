@@ -1,4 +1,4 @@
-module AlfredGranson/doe_fetcher
+module AlfredGranson/Go-Diesel-Prices
 
 go 1.18
 

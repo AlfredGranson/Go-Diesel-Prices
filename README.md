@@ -1,5 +1,5 @@
 
-# doe_fetcher
+# Go-Diesel-Prices
 
 Go tool to retrieve diesel prices from the US Energy Information Administration API
 
@@ -12,11 +12,11 @@ Create an API key by signing up at: https://www.eia.gov/opendata/register.php
 Clone the repo
 
 ```bash
-  git clone git@github.com:AlfredGranson/doe_fetcher.git
+  git clone git@github.com:AlfredGranson/Go-Diesel-Prices.git
 ```
 Create your env and update the EIA_KEY to match your key
 ```bash
-  cd doe_fetcher
+  cd Go-Diesel-Prices
   cp .env.example .env
 ```
 Build the project
@@ -26,5 +26,5 @@ Build the project
 ## Usage/Examples
 
 ```bash
-  ./doe_fetcher
+  ./Go-Diesel-Prices
 ``` 
